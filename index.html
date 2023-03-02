@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="dataArea">
+    <h2>Enregistrer une nouvelle partie</h2>
+    <form id="formData">
+      <div class="sectionForm timeInfo">
+        <div>
+          <legend>Quel jour on est ?</legend>
+          <input type="date" id="dateJeu" name="dateJeu" />
+        </div>
+        <div>
+          <legend>Combien de temps de jeu ?</legend>
+          <input type="time" id="dureeJeu" name="dureeJeu" />
+        </div>
+      </div>
+      <div class="sectionForm gameInfo">
+        <div class="gameType">
+          <legend>Quel type de partie ?</legend>
+          <select id="typeGameSelect">
+            <option value="">Choisissez un type de partie</option>
+            <option value="Chronos">Chronos</option>
+            <option value="Classique">Classique</option>
+            <option value="Duel">Duel</option>
+          </select>
+        </div>
+      </div>
+      <div class="sectionForm playersInfo">
+        <div id="formPlayers">
+          <legend>Qui a joué ?</legend>
+        </div>
+        <div id="newPlayers">
+          <legend>Il y a des nouveaux joueurs ?</legend>
+          <div>
+            <input type="text" placeholder="Nom du nouveau joueur" />
+            <button>Ajouter</button>
+          </div>
+          <button>+</button>
+        </div>
+      </div>
+      <button id="saveGame">Enregistrer la partie</button>
+    </form>
+    <div id="boxSelectedPlayers"></div>
+  </div>
+
+
+  <div id="tableData">
+    <div id="gamesData">
+      <h2>Toutes les parties</h2>
+    </div>
+    <div id="statGames">
+      <h2>Le coin des stats</h2>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

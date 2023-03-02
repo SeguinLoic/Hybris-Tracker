@@ -1,0 +1,39 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.sectionForm:not(:last-child) {
+  padding-bottom: 15px;
+}
+.sectionForm > div {
+  padding: 0px 15px;
+}
+.sectionForm > div legend {
+  margin-bottom: 5px;
+}
+
+#formPlayers {
+  margin-bottom: 15px;
+}
+
+#boxSelectedPlayers {
+  padding: 0px 15px;
+  margin-bottom: 15px;
+}
+#boxSelectedPlayers > span:not(:last-child) {
+  margin-right: 5px;;
+}
+
+
+#dataArea {
+  padding: 15px;
+  border: 1px solid #cfcfcf;
+  border-radius: 5px;
+}
+.playersArea {
+  display:flex;
+}
+.timeInfo {
+  display: flex;
+}
